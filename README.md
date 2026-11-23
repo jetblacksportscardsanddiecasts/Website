@@ -1,7 +1,16 @@
 # Jet Black Sports Cards & DieCasts website
 
-Public storefront landing page for Jet Black Sports Cards & DieCasts. It directs shoppers to eBay and Whatnot. The page uses HTML and CSS and needs no build or backend.
+Public storefront source with the Jet Black emblem and marketplace links.
 
-Run `python3 -m http.server 8001 --bind 127.0.0.1` from this directory and open `http://127.0.0.1:8001/` to preview.
+## Open, review, and test the website
 
-The source is ready for GitHub Pages from `main` at the repository root. The existing business domain can continue serving its current site while the Pages preview is reviewed. Any later backend can provide public product data via an API. Keep private inventory, financial reports and API credentials in the private systems.
+1. From the Website folder, run `python3 preview.py`. Any terminal works.
+2. Open [http://127.0.0.1:8001/](http://127.0.0.1:8001/).
+3. Check the logo, resize the window for the mobile layout, and try the eBay, Whatnot, and Instagram links.
+4. Stop the preview with **Control+C** in the terminal that started it.
+
+From a second terminal, run `curl -fsS -o /dev/null http://127.0.0.1:8001/` and `curl -fsS -o /dev/null http://127.0.0.1:8001/style.css` to check HTTP delivery. If port 8001 is already in use, run `python3 preview.py --port 8002` and use the address it prints. The preview serves the public HTML and stylesheet only.
+
+## Future hosting
+
+GitHub Pages can serve the public static page after separate hosting approval. The existing Shopify domain can stay in place while the preview is reviewed. Keep the private dashboard, seller reports, and marketplace credentials in the separate Inventory system.
