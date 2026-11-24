@@ -13,4 +13,6 @@ From a second terminal, run `curl -fsS -o /dev/null http://127.0.0.1:8001/` and 
 
 ## Future hosting
 
-GitHub Pages can serve the public static page after separate hosting approval. The existing Shopify domain can stay in place while the preview is reviewed. Keep the private dashboard, seller reports, and marketplace credentials in the separate Inventory system.
+GitHub Pages is available at no additional hosting cost for public repositories, but its usage rules exclude sites primarily directed at facilitating sales. This storefront directs shoppers to marketplaces. The repository stays as the source for the site, with Pages disabled. [GitHub Pages usage limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits)
+
+A static Cloudflare Pages preview is an alternative. With approval, publish only `index.html` and `style.css` to the provider's preview address. It needs no server functions or domain change, and Cloudflare lists static asset requests as free. Keep the Shopify domain as-is and host the owner dashboard separately. Add an Owner Login link only after a protected owner URL is available. [Cloudflare Pages pricing](https://developers.cloudflare.com/pages/functions/pricing/)
